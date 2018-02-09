@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru" ng-app="kenzo">
+
+<head>
+    <title>KENZO APP</title>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index,follow" />
+    <meta name="fragment" content="!" />
+    <meta name="viewport" content="width=1248">
+
+    <base href="/">
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="/static/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/static/images/favicon-16x16.png">
+    <link rel="manifest"
+        href="/static/images/manifest.json">
+    <link rel="mask-icon"
+        href="/static/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon"
+        href="/static/images/favicon.ico">
+    <meta name="msapplication-config"
+        content="/static/images/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/static/styles/third-party/kk-reset.css" />
+    <link rel="stylesheet" href="/static/styles/kk.ui.css" />
+    <link rel="stylesheet" href="/static/styles/main.css" />
+</head>
+<body>
+    <div class="page">
+<!--        <kk-header></kk-header>-->
+        <div ng-view></div>
+<!--        <kk-footer></kk-footer>-->
+<!--        <kk-admin-widget></kk-admin-widget>-->
+    </div>
+
+<!-- Скрипты загружаются после загрузки страницы -->
+    <script defer src="/static/scripts/third-party/kk.min.js"></script>
+    <script defer src="/static/scripts/kk.temp.js"></script>
+    <script>
+        const initial_data = {{ initial_data|safe }}
+    </script>
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <script defer src="/static/scripts/main.js"></script>
+    <script defer src="/static/scripts/classes.js"></script>
+
+    <script defer src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script defer src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script defer src="//yastatic.net/share2/share.js"></script>
+
+    <script defer src="/static/scripts/app.js"></script>
+    <script defer src="/static/scripts/components.js"></script>
+
+
+    <div style="display:none">
+        <script type="text/javascript">
+            if (initial_data.user && initial_data.user.is_staff) {
+                console.log('МЕТРИКА НЕ ЗАГРУЖЕНА');
+            } else {
+                // Место для Метрики
+            }
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/47019153" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </div>
+</body>
+</html>

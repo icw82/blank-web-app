@@ -1,0 +1,39 @@
+.b-panel{display: none; position: absolute}
+.b-panel.visible{display: block}
+
+.b-panel__clone{display: block; position: absolute}
+
+.b-panel__pointer{
+    display: none;
+    width: 0; height: 0;
+    position: absolute; top: -15px; left: 0;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: none;
+    border-bottom-color: white}
+.b-panel__pointer.visible{display: block}
+
+.b-panel__close-button{
+    width: 13px; height: 13px;
+    position: absolute; top: 12px; right: 12px;
+    fill: rgba(0, 0, 0, .3); cursor: pointer}
+.b-panel__close-button:hover{fill: red}
+
+/*
+
+.e-popup--colored{box-shadow: 0 4px 26px -3px rgba(12, 49, 74, .6);
+    background-color: rgb(226, 236, 251)}
+
+.e-popup__pointer{}
+.e-popup--colored__pointer{border-bottom-color: rgb(226, 236, 251)}
+
+.e-popup__title{margin-bottom: 20px; font-size: 25px; font-weight: bold}
+
+
+.e-popup{box-shadow: 0 4px 50px 0 rgba(12, 49, 74, .6)}
+
+.e-popup.std,
+.e-popup--colored.std{
+    padding: calc(var(--gap) * .65) calc(var(--gap) * .7);
+    font-size: 18px}
+*/

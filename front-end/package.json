@@ -1,0 +1,31 @@
+{
+    "name": "icw82's blank web app",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "gulp"
+    },
+    "devDependencies": {
+        "autoprefixer": "^7.1.1",
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "del": "^2.2.2",
+        "glob": "^7.1.2",
+        "gulp": "github:gulpjs/gulp#4.0",
+        "gulp-babel": "^7.0.0",
+        "gulp-babel-minify": "^0.2.0",
+        "gulp-concat": "^2.6.0",
+        "gulp-csso": "^3.0.0",
+        "gulp-insert": "^0.5.0",
+        "gulp-postcss": "^7.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.5.4",
+        "kenzo-kit": "^0.10.0",
+        "map-stream": "0.0.7",
+        "postcss-color-function": "^4.0.1",
+        "postcss-custom-properties": "^6.0.1",
+        "postcss-mixins": "^6.0.0",
+        "streamqueue": "^1.1.1"
+    },
+    "dependencies": {}
+}
